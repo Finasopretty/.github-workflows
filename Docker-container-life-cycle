@@ -1,0 +1,92 @@
+### 🔹 Docker Lifecycle (End-to-End)
+
+The lifecycle in **Docker** covers everything from building an image to running and managing containers.
+
+---
+
+## 🔹 1. Build (Create Image)
+
+* Define app in a **Dockerfile**
+* Build an image
+
+```bash
+docker build -t myapp .
+```
+
+---
+
+## 🔹 2. Push / Store Image
+
+* Store image in a registry (e.g., Docker Hub)
+
+```bash
+docker push myapp
+```
+
+---
+
+## 🔹 3. Pull Image
+
+* Retrieve image from registry
+
+```bash
+docker pull myapp
+```
+
+---
+
+## 🔹 4. Run (Create & Start Container)
+
+* Start container from image
+
+```bash
+docker run -d myapp
+```
+
+---
+
+## 🔹 5. Manage Container
+
+* Check, stop, restart, pause
+
+```bash
+docker ps
+docker stop <id>
+docker restart <id>
+```
+
+---
+
+## 🔹 6. Stop & Remove
+
+* Stop and delete container
+
+```bash
+docker rm <id>
+```
+
+---
+
+## 🔹 7. Cleanup
+
+* Remove unused images/containers
+
+```bash
+docker system prune
+```
+
+---
+
+## 🔹 Lifecycle Flow
+
+👉 **Dockerfile → Image → Registry → Container → Manage → Remove**
+
+---
+
+## 🔹 In Simple Terms
+
+👉 Docker lifecycle = **build image → run container → manage → delete**
+
+---
+
+
